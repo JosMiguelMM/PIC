@@ -1,0 +1,8 @@
+>>> Warning 203 "C:\Program Files (x86)\PICC\drivers\DS1307A.c" Line 233(1,1): Condition always TRUE
+>>> Warning 214 "Direccionamiento de memoria.c" Line 381(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "Direccionamiento de memoria.c" Line 442(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "Direccionamiento de memoria.c" Line 522(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "Direccionamiento de memoria.c" Line 671(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "Direccionamiento de memoria.c" Line 751(1,1): Operator precedance rules may not be as intended, use () to clarify
+      Memory usage:   ROM=35%      RAM=7% - 8%
+      0 Errors,  6 Warnings.

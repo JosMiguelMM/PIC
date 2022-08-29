@@ -1,0 +1,250 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B     RS_bit
+00C     lcdline
+00D     kbd_getc.kbd_call_count
+00E.0   kbd_getc.kbd_down
+00E.1   flag
+00F     kbd_getc.last_key
+010     kbd_getc.col
+011-05D days_of_week
+05E-05F @sprintf_string
+060     i
+061     b
+062     dato
+063-066 clave
+067-06A datoi
+06B-06E datoe
+06F     adres
+070     dato1
+071     dato2
+072     datom
+073-076 valor
+077-078 segundos
+079-07A auxsegundos
+07B     hour
+07C     min
+07D     day
+07E     mth
+07F     year
+080     dow
+081     sec
+082-089 time
+08A     kbd_getc.kchar
+08A     lcd_init.i
+08A     ds1307_get_date.@SCRATCH1
+08A     ds1307_get_time.@SCRATCH1
+08A     teclado.@SCRATCH1
+08A     un_digito.@SCRATCH1
+08A     escribir_memoria_ext.@SCRATCH1
+08A     leer.@SCRATCH1
+08A     leer_men_ext.@SCRATCH1
+08A     hora_fecha.@SCRATCH1
+08A     MAIN.@SCRATCH1
+08B     kbd_getc.row
+08B-08C write_ext_eeprom.address
+08B     @PRINTF_D_466.P1
+08B     lcd_init.@SCRATCH1
+08B     teclado.@SCRATCH2
+08B     leer.@SCRATCH2
+08B     leer_men_ext.@SCRATCH2
+08C-08D @ITOF.P1
+08C     @PRINTF_D_466.P2
+08C-08D read_ext_eeprom.address
+08C-08F @FLT.P1
+08C     kbd_getc.@SCRATCH1
+08C     leer.@SCRATCH3
+08D     write_ext_eeprom.data
+08D     kbd_getc.@SCRATCH2
+08D     @PRINTF_D_466.@SCRATCH1
+08E     @I2C_READ_1.P1
+08E     @I2C_WRITE_1.P2
+08E     read_ext_eeprom.data
+08E.0   write_ext_eeprom.status
+08E     @PRINTF_D_466.@SCRATCH2
+08F     @I2C_READ_2.P1
+08F     ds1307_bcd2bin.bcd_value
+08F     @I2C_READ_1.@SCRATCH1
+08F     write_ext_eeprom.@SCRATCH1
+08F     read_ext_eeprom.@SCRATCH1
+08F     @PRINTF_D_466.@SCRATCH3
+090     ds1307_bcd2bin.temp
+090-093 @FLT.P1
+090     @I2C_READ_1.@SCRATCH2
+090     @I2C_READ_2.@SCRATCH1
+090     write_ext_eeprom.@SCRATCH2
+090     read_ext_eeprom.@SCRATCH2
+090     @PRINTF_D_466.@SCRATCH4
+091     lcd_putc.c
+091     @DIV88.P1
+091     @I2C_WRITE_2.P2
+091     ds1307_bcd2bin.@SCRATCH1
+091     @I2C_READ_2.@SCRATCH2
+092     lcd_gotoxy.x
+092     @delay_ms1.P1
+092     @DIV88.P2
+093     lcd_gotoxy.y
+093     @DIV88.@SCRATCH1
+094     lcd_gotoxy.address
+094     @FLT.@SCRATCH1
+095     @FLT.@SCRATCH2
+095     lcd_gotoxy.@SCRATCH1
+096     lcd_send_byte.address
+097     lcd_send_byte.n
+098     lcd_send_byte.@SCRATCH1
+099     lcd_send_nibble.nibble
+09A     lcd_send_nibble.RS_bit
+09B     lcd_send_nibble.x
+F81     portkbd
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_HIGH
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBE     CCP_1_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+05D0  @delay_ms1
+0994  @ITOF
+09CC  @FLT
+0004  LCD_INIT_STRING
+05F6  lcd_send_nibble
+0638  lcd_send_byte
+0678  lcd_init
+06DC  lcd_gotoxy
+0716  @goto11610
+0738  lcd_putc
+0018  KEYS
+06D8  kbd_init
+0A44  kbd_getc
+0B3A  @goto11649
+0EF2  @I2C_READ_1
+0E86  @I2C_WRITE_1
+1076  ds1307_get_date
+11DE  ds1307_get_time
+0F58  ds1307_bcd2bin
+0854  @I2C_READ_2
+07E8  @I2C_WRITE_2
+0D5C  write_ext_eeprom
+08BC  read_ext_eeprom
+0B5C  teclado
+0CD8  @goto11943
+0CFA  un_digito
+0E50  escribir_memoria_ext
+07AC  leer
+0956  leer_men_ext
+1076  hora_fecha
+0038  @const579
+0F7E  @DIV88
+0FA6  @PRINTF_D_466
+004E  @const587
+0062  @const588
+1330  MAIN
+0078  @const596
+009A  @const597
+00BC  @const598
+00DA  @const599
+00FC  @const600
+0112  @const601
+012A  @const602
+0144  @const603
+0162  @const605
+0182  @const606
+0198  @const607
+01BA  @const608
+01D8  @const609
+01FA  @const610
+021A  @const611
+023A  @const612
+0250  @const615
+0270  @const616
+028C  @const617
+02A4  @const618
+02C4  @const619
+02E4  @const620
+0304  @const621
+0320  @const622
+0342  @const623
+0360  @const624
+0376  @const625
+038E  @const626
+03AA  @const627
+03C2  @const628
+03E4  @const629
+0406  @const630
+0428  @const631
+044A  @const632
+046C  @const633
+0486  @const634
+04A6  @const635
+04C8  @const636
+04E6  @const637
+0506  @const638
+0528  @const640
+0548  @const642
+0562  @const644
+057C  @const646
+059A  @const650
+05B0  @const682
+1330  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+0A2F  inicio
+0A3E  menu
+0B09  admin
+0F5E  David
+0BFB  Miguel
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Proyecto arquitectura c\Ds1307\
+
+Project Files:
+    ds1307.c
+    ..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ..\..\Program Files (x86)\PICC\drivers\math.h
+    ..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+    ..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+    ..\..\Program Files (x86)\PICC\drivers\DS1307A.c
+    ..\..\Program Files (x86)\PICC\drivers\24C512.c
+
+Units:
+    C:\Proyecto arquitectura c\Ds1307\ds1307.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      ds1307.err
+    Ext Symbols: ds1307.esym
+    INHX32:      ds1307.hex
+    Symbols:     ds1307.sym
+    List:        ds1307.lst
+    Debug/COFF:  ds1307.cof
+    Project:     ds1307.PJT
+    Call Tree:   ds1307.tre
+    Statistics:  ds1307.sta

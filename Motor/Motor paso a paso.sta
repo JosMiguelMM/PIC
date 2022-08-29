@@ -1,0 +1,148 @@
+
+ROM used: 12168 (37%)
+          12168 (37%) including unused fragments
+
+          2 Average locations per line
+          7 Average locations per statement
+
+RAM used: 142 (7%) at main() level
+          159 (8%) worst case
+
+Stack used: 6 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+ 1018   733  44  Motor paso a paso.c
+  426     0   0  ..\..\Program Files (x86)\PICC\devices\18F4550.h
+ 1273   359  21  ..\..\Program Files (x86)\PICC\drivers\stdlib.h
+   28     0   0  ..\..\Program Files (x86)\PICC\drivers\stddef.h
+  409   121   7  ..\..\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  ..\..\Program Files (x86)\PICC\drivers\ctype.h
+ 2104   238  14  ..\..\Program Files (x86)\PICC\drivers\math.h
+  170    62   4  ..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+  140    45   3  ..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+  256    93   6  ..\..\Program Files (x86)\PICC\drivers\DS1307A.c
+   73    24   1  ..\..\Program Files (x86)\PICC\drivers\24C512.c
+----- -----
+ 5925  1675 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   0   1             @delay_ms1
+0     54   0   2             @ITOF
+0    118   0  10             @FLT
+0     20   0   0             @const449
+0     66   0   3   419  6.0  lcd_send_nibble
+0     64   0   3   262  4.3  lcd_send_byte
+0     98   0   2   406  4.7  lcd_init
+0     58   0   4   336  6.0  lcd_gotoxy
+0     34   0   0             @goto11610
+0    116   0   1   517  5.2  lcd_putc
+0     32   0   0             @const472
+0      4   0   0     3  0.0  kbd_init
+0    246   1   4  4299  9.7  kbd_getc
+0     34   0   0             @goto11649
+0    102   0   3             @I2C_READ_1
+0    108   0   1             @I2C_WRITE_1
+ Inline        5   437  3.1  ds1307_get_date
+ Inline        4   367  3.0  ds1307_get_time
+0     38   0   3   162  3.8  ds1307_bcd2bin
+0    104   0   3             @I2C_READ_2
+0    108   0   1             @I2C_WRITE_2
+0    242   1   6   331  4.0  write_ext_eeprom
+0    152   1   5   216  2.9  read_ext_eeprom
+0    380   2   2  2331 10.3  teclado
+0     34   0   0             @goto11943
+0     98   0   1   473  7.6  un_digito
+0     54   0   1   136  3.9  escribir_memoria_ext
+0     60   0   3   119  3.4  leer
+0     62   0   2   119  3.4  leer_men_ext
+0    698   3   1  1022  4.3  hora_fecha
+0     22   0   0             @const584
+0     40   0   3             @DIV88
+0    208   1   6             @PRINTF_D_466
+0     20   0   0             @const592
+0     22   0   0             @const593
+0    110   0   1   328  5.6  buscar_pos
+0    444   2   0   364  2.8  hacer_reporte
+0    314   1   2  1308  5.8  mostrar_reporte
+0     34   0   0             @const600
+0    136   1   1   690  3.4  motorderecha
+0    136   1   1   690  3.4  motorizquierda
+0   5788  24   1 20898  7.5  MAIN
+0     34   0   0             @const616
+0     34   0   0             @const617
+0     30   0   0             @const618
+0     34   0   0             @const619
+0     22   0   0             @const620
+0     24   0   0             @const621
+0     26   0   0             @const622
+0     30   0   0             @const623
+0     32   0   0             @const625
+0     22   0   0             @const626
+0     34   0   0             @const627
+0     30   0   0             @const628
+0     34   0   0             @const629
+0     32   0   0             @const630
+0     32   0   0             @const631
+0     22   0   0             @const632
+0     32   0   0             @const635
+0     28   0   0             @const636
+0     24   0   0             @const637
+0     32   0   0             @const638
+0     32   0   0             @const639
+0     32   0   0             @const640
+0     28   0   0             @const641
+0     32   0   0             @const642
+0     30   0   0             @const643
+0     22   0   0             @const644
+0     24   0   0             @const645
+0     28   0   0             @const646
+0     24   0   0             @const647
+0     34   0   0             @const648
+0     34   0   0             @const649
+0     34   0   0             @const650
+0     34   0   0             @const651
+0     34   0   0             @const652
+0     26   0   0             @const653
+0     32   0   0             @const654
+0     34   0   0             @const655
+0     30   0   0             @const656
+0     34   0   0             @const657
+0     34   0   0             @const658
+0     34   0   0             @const659
+0     30   0   0             @const661
+0     24   0   0             @const662
+0     22   0   0             @const663
+0     34   0   0             @const664
+0     32   0   0             @const665
+0     34   0   0             @const666
+0     32   0   0             @const668
+0     32   0   0             @const669
+0     26   0   0             @const670
+0     26   0   0             @const672
+0     30   0   0             @const674
+0     22   0   0             @const678
+0     34   0   0             @const683
+0     24   0   0             @const697
+0     32   0   0             @const718
+
+Program metrics:
+    Functions               24
+    Statements              1675
+    Comments                1593
+    Volume (V)              50390
+    Difficilty (D)          114.1
+    Effort to implement (E) 5751869
+    Time to implement (T)   88 hours, 46 minutes
+    Est Delivered Bugs (B)  11
+    Cyclomatic Complexity   90
+    Maintainability (MI)    64
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  12164  20600  
+
+
+

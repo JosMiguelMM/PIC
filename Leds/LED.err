@@ -1,0 +1,5 @@
+>>> Warning 202 "LED.c" Line 10(5,9): Variable never used:   dato
+>>> Warning 202 "LED.c" Line 10(11,16): Variable never used:   clave
+>>> Warning 202 "LED.c" Line 10(21,22): Variable never used:   i
+      Memory usage:   ROM=2%      RAM=1% - 1%
+      0 Errors,  3 Warnings.

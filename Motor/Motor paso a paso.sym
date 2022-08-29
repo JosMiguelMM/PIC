@@ -1,0 +1,275 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B     RS_bit
+00C     lcdline
+00D     kbd_getc.kbd_call_count
+00E.0   kbd_getc.kbd_down
+00E.1   flag
+00E.2   espacio_vacio
+00F     kbd_getc.last_key
+010     kbd_getc.col
+011-05D days_of_week
+05E-05F @sprintf_string
+060     i
+061     b
+062-065 clave
+066-069 datoi
+06A-06D datoe
+06E     adres
+06F     dato1
+070     dato2
+071     cantidad
+072     datom
+073-076 valor
+077-078 segundos
+079-07A auxsegundos
+07B     ide
+07C     hour
+07D     min
+07E     day
+07F     mth
+080     year
+081     dow
+082     sec
+083-08A time
+08B     contador
+08C     demora
+08D     kbd_getc.kchar
+08D     lcd_init.i
+08D     ds1307_get_date.@SCRATCH1
+08D     ds1307_get_time.@SCRATCH1
+08D     teclado.@SCRATCH1
+08D     un_digito.@SCRATCH1
+08D     escribir_memoria_ext.@SCRATCH1
+08D     leer.@SCRATCH1
+08D     leer_men_ext.@SCRATCH1
+08D     hora_fecha.@SCRATCH1
+08D     buscar_pos.@SCRATCH1
+08D     mostrar_reporte.@SCRATCH1
+08D     motorderecha.@SCRATCH1
+08D     motorizquierda.@SCRATCH1
+08D     MAIN.@SCRATCH1
+08E     @PRINTF_D_466.P1
+08E-08F write_ext_eeprom.address
+08E     kbd_getc.row
+08E     lcd_init.@SCRATCH1
+08E     teclado.@SCRATCH2
+08E     leer.@SCRATCH2
+08E     leer_men_ext.@SCRATCH2
+08E     mostrar_reporte.@SCRATCH2
+08F-090 read_ext_eeprom.address
+08F-090 @ITOF.P1
+08F-092 @FLT.P2
+08F     @PRINTF_D_466.P3
+08F     kbd_getc.@SCRATCH1
+08F     leer.@SCRATCH3
+090     write_ext_eeprom.data
+090     kbd_getc.@SCRATCH2
+090     @PRINTF_D_466.@SCRATCH1
+091     @I2C_WRITE_1.P1
+091.0   write_ext_eeprom.status
+091     @I2C_READ_1.P1
+091     read_ext_eeprom.data
+091     @PRINTF_D_466.@SCRATCH2
+092     ds1307_bcd2bin.bcd_value
+092     @I2C_READ_2.P1
+092     @I2C_READ_1.@SCRATCH1
+092     write_ext_eeprom.@SCRATCH1
+092     read_ext_eeprom.@SCRATCH1
+092     @PRINTF_D_466.@SCRATCH3
+093     ds1307_bcd2bin.temp
+093-096 @FLT.P1
+093     @I2C_READ_1.@SCRATCH2
+093     @I2C_READ_2.@SCRATCH1
+093     write_ext_eeprom.@SCRATCH2
+093     read_ext_eeprom.@SCRATCH2
+093     @PRINTF_D_466.@SCRATCH4
+094     lcd_putc.c
+094     @DIV88.P1
+094     @I2C_WRITE_2.P2
+094     ds1307_bcd2bin.@SCRATCH1
+094     @I2C_READ_2.@SCRATCH2
+095     lcd_gotoxy.x
+095     @DIV88.P1
+095     @delay_ms1.P2
+096     lcd_gotoxy.y
+096     @DIV88.@SCRATCH1
+097     lcd_gotoxy.address
+097     @FLT.@SCRATCH1
+098     @FLT.@SCRATCH2
+098     lcd_gotoxy.@SCRATCH1
+099     lcd_send_byte.address
+09A     lcd_send_byte.n
+09B     lcd_send_byte.@SCRATCH1
+09C     lcd_send_nibble.nibble
+09D     lcd_send_nibble.RS_bit
+09E     lcd_send_nibble.x
+F81     portkbd
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2_HIGH
+FBB     CCP_2
+FBE     CCP_1
+FBE     CCP_1_HIGH
+FBE     CCP_1_LOW
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+071E  @delay_ms1
+0AE2  @ITOF
+0B18  @FLT
+0004  LCD_INIT_STRING
+0744  lcd_send_nibble
+0786  lcd_send_byte
+07C6  lcd_init
+082C  lcd_gotoxy
+0866  @goto11610
+0888  lcd_putc
+0018  KEYS
+0828  kbd_init
+0B8E  kbd_getc
+0C84  @goto11649
+103A  @I2C_READ_1
+0FCE  @I2C_WRITE_1
+14E6  ds1307_get_date
+15BE  ds1307_get_time
+10A0  ds1307_bcd2bin
+09A4  @I2C_READ_2
+0938  @I2C_WRITE_2
+0EA6  write_ext_eeprom
+0A0C  read_ext_eeprom
+0CA6  teclado
+0E22  @goto11943
+0E44  un_digito
+0F98  escribir_memoria_ext
+08FC  leer
+0AA4  leer_men_ext
+11BE  hora_fecha
+0038  @const584
+10C6  @DIV88
+10EE  @PRINTF_D_466
+004E  @const592
+0062  @const593
+1478  buscar_pos
+14E6  hacer_reporte
+16A2  mostrar_reporte
+0078  @const600
+17DC  motorderecha
+1864  motorizquierda
+18EC  MAIN
+009A  @const616
+00BC  @const617
+00DE  @const618
+00FC  @const619
+011E  @const620
+0134  @const621
+014C  @const622
+0166  @const623
+0184  @const625
+01A4  @const626
+01BA  @const627
+01DC  @const628
+01FA  @const629
+021C  @const630
+023C  @const631
+025C  @const632
+0272  @const635
+0292  @const636
+02AE  @const637
+02C6  @const638
+02E6  @const639
+0306  @const640
+0326  @const641
+0342  @const642
+0362  @const643
+0380  @const644
+0396  @const645
+03AE  @const646
+03CA  @const647
+03E2  @const648
+0404  @const649
+0426  @const650
+0448  @const651
+046A  @const652
+048C  @const653
+04A6  @const654
+04C6  @const655
+04E8  @const656
+0506  @const657
+0528  @const658
+054A  @const659
+056C  @const661
+058A  @const662
+05A2  @const663
+05B8  @const664
+05DA  @const665
+05FA  @const666
+061C  @const668
+063C  @const669
+065C  @const670
+0676  @const672
+0690  @const674
+06AE  @const678
+06C4  @const683
+06E6  @const697
+06FE  @const718
+18EC  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+0D0F  inicio
+0D1E  menu
+0DE9  admin
+134A  David
+0EDC  Miguel
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Proyecto arquitectura c\Motor\
+
+Project Files:
+    Motor paso a paso.c
+    ..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ..\..\Program Files (x86)\PICC\drivers\math.h
+    ..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+    ..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+    ..\..\Program Files (x86)\PICC\drivers\DS1307A.c
+    ..\..\Program Files (x86)\PICC\drivers\24C512.c
+
+Units:
+    C:\Proyecto arquitectura c\Motor\Motor paso a paso.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      Motor paso a paso.err
+    Ext Symbols: Motor paso a paso.esym
+    INHX32:      Motor paso a paso.hex
+    Symbols:     Motor paso a paso.sym
+    List:        Motor paso a paso.lst
+    Debug/COFF:  Motor paso a paso.cof
+    Project:     Motor paso a paso.PJT
+    Call Tree:   Motor paso a paso.tre
+    Statistics:  Motor paso a paso.sta

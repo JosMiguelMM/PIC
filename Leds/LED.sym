@@ -1,0 +1,72 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B     dato
+00C-00F clave
+010     i
+011     prender.@SCRATCH1
+012     @delay_ms1.P1
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBB     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1_HIGH
+FBE     CCP_1
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0004  @delay_ms1
+001E  prender
+01D6  MAIN
+01D6  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+0105  inicio
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Proyecto arquitectura c\Leds\
+
+Project Files:
+    LED.c
+    ..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ..\..\Program Files (x86)\PICC\drivers\math.h
+
+Units:
+    C:\Proyecto arquitectura c\Leds\LED.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      LED.err
+    Ext Symbols: LED.esym
+    INHX32:      LED.hex
+    Symbols:     LED.sym
+    List:        LED.lst
+    Debug/COFF:  LED.cof
+    Project:     LED.PJT
+    Call Tree:   LED.tre
+    Statistics:  LED.sta

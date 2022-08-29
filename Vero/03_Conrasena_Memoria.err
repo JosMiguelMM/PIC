@@ -1,0 +1,9 @@
+>>> Warning 214 "03_Conrasena_Memoria.c" Line 236(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "03_Conrasena_Memoria.c" Line 270(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "03_Conrasena_Memoria.c" Line 318(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "03_Conrasena_Memoria.c" Line 420(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "03_Conrasena_Memoria.c" Line 468(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 202 "03_Conrasena_Memoria.c" Line 16(11,15): Variable never used:   dato
+>>> Warning 202 "03_Conrasena_Memoria.c" Line 18(7,12): Variable never used:   valor
+      Memory usage:   ROM=22%      RAM=2% - 3%
+      0 Errors,  7 Warnings.

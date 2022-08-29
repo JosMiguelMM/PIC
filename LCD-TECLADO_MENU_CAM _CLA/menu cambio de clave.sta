@@ -1,0 +1,114 @@
+
+ROM used: 7568 (23%)
+          7568 (23%) including unused fragments
+
+          1 Average locations per line
+          6 Average locations per statement
+
+RAM used: 41 (2%) at main() level
+          53 (3%) worst case
+
+Stack used: 5 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  670   469  36  menu cambio de clave.c
+  426     0   0  ..\..\Program Files (x86)\PICC\devices\18F4550.h
+ 1273   359  28  ..\..\Program Files (x86)\PICC\drivers\stdlib.h
+   28     0   0  ..\..\Program Files (x86)\PICC\drivers\stddef.h
+  409   121   9  ..\..\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  ..\..\Program Files (x86)\PICC\drivers\ctype.h
+ 2104   238  18  ..\..\Program Files (x86)\PICC\drivers\math.h
+  170    62   5  ..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+  140    45   3  ..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+----- -----
+ 5248  1294 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   0   1             @delay_ms1
+0     56   0   2             @ITOF
+0    120   1  10             @FLT
+0     20   0   0             @const449
+0     66   0   3   419  6.0  lcd_send_nibble
+0     64   0   3   262  4.3  lcd_send_byte
+0     96   1   2   406  4.7  lcd_init
+0     58   0   4   336  6.0  lcd_gotoxy
+0     34   0   0             @goto11610
+0    116   1   1   517  5.2  lcd_putc
+0     32   0   0             @const472
+0      4   0   0     3  0.0  kbd_init
+0    246   2   4  4262 10.2  kbd_getc
+0     34   0   0             @goto11649
+0    524   3   2  2401 10.3  teclado
+0     34   0   0             @goto11724
+0     98   1   1   473  7.6  un_digito
+0     84   1   1   136  3.9  escribir_memoria
+0     60   0   3   119  3.4  leer
+0   4412  29   1 15868  6.0  MAIN
+0     34   0   0             @const511
+0     34   0   0             @const512
+0     30   0   0             @const513
+0     34   0   0             @const514
+0     22   0   0             @const515
+0     24   0   0             @const516
+0     26   0   0             @const517
+0     30   0   0             @const518
+0     32   0   0             @const520
+0     22   0   0             @const521
+0     34   0   0             @const522
+0     30   0   0             @const523
+0     34   0   0             @const524
+0     32   0   0             @const525
+0     32   0   0             @const526
+0     22   0   0             @const527
+0     32   0   0             @const530
+0     28   0   0             @const531
+0     24   0   0             @const532
+0     32   0   0             @const533
+0     32   0   0             @const534
+0     32   0   0             @const535
+0     28   0   0             @const536
+0     34   0   0             @const537
+0     30   0   0             @const538
+0     22   0   0             @const539
+0     24   0   0             @const540
+0     28   0   0             @const541
+0     24   0   0             @const542
+0     34   0   0             @const543
+0     34   0   0             @const544
+0     34   0   0             @const545
+0     34   0   0             @const546
+0     34   0   0             @const547
+0     26   0   0             @const548
+0     32   0   0             @const549
+0     34   0   0             @const550
+0     32   0   0             @const551
+0     30   0   0             @const552
+0     34   0   0             @const554
+0     32   0   0             @const556
+0     26   0   0             @const558
+0     26   0   0             @const560
+0     30   0   0             @const562
+0     22   0   0             @const566
+0     32   0   0             @const599
+
+Program metrics:
+    Functions               12
+    Statements              1294
+    Comments                1463
+    Volume (V)              31981
+    Difficilty (D)          67.5
+    Effort to implement (E) 2160266
+    Time to implement (T)   33 hours, 20 minutes
+    Est Delivered Bugs (B)  6
+    Cyclomatic Complexity   68
+    Maintainability (MI)    4
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  7564  25200  
+
+
+

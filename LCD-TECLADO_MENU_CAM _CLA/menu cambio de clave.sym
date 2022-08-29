@@ -1,0 +1,187 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B     RS_bit
+00C     lcdline
+00D     kbd_getc.kbd_call_count
+00E.0   kbd_getc.kbd_down
+00E.1   flag
+00F     kbd_getc.last_key
+010     kbd_getc.col
+011     i
+012     b
+013     dato
+014-017 clave
+018-01B datoi
+01C     adres
+01D     dato1
+01E     dato2
+01F     datom
+020-023 valor
+024-025 segundos
+026-027 auxsegundos
+028     lcd_init.i
+028     kbd_getc.kchar
+028     teclado.@SCRATCH1
+028     un_digito.@SCRATCH1
+028     escribir_memoria.@SCRATCH1
+028     leer.@SCRATCH1
+028     MAIN.@SCRATCH1
+029     kbd_getc.row
+029     lcd_init.@SCRATCH1
+029     teclado.@SCRATCH2
+029     leer.@SCRATCH2
+02A-02D @FLT.P1
+02A     lcd_putc.c
+02A-02B @ITOF.P1
+02A     kbd_getc.@SCRATCH1
+02A     leer.@SCRATCH3
+02B     @delay_ms1.P1
+02B     lcd_gotoxy.x
+02B     kbd_getc.@SCRATCH2
+02C     lcd_gotoxy.y
+02D     lcd_gotoxy.address
+02E-031 @FLT.P1
+02E     lcd_gotoxy.@SCRATCH1
+02F     lcd_send_byte.address
+030     lcd_send_byte.n
+031     lcd_send_byte.@SCRATCH1
+032     lcd_send_nibble.nibble
+032     @FLT.@SCRATCH1
+033     lcd_send_nibble.RS_bit
+033     @FLT.@SCRATCH2
+034     lcd_send_nibble.x
+F81     portkbd
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2_HIGH
+FBB     CCP_2
+FBE     CCP_1_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0590  @delay_ms1
+07A8  @ITOF
+07E0  @FLT
+0004  LCD_INIT_STRING
+05B6  lcd_send_nibble
+05F8  lcd_send_byte
+0638  lcd_init
+069C  lcd_gotoxy
+06D6  @goto11610
+06F8  lcd_putc
+0018  KEYS
+0698  kbd_init
+0858  kbd_getc
+094E  @goto11649
+0970  teclado
+0B7C  @goto11724
+0B9E  un_digito
+0C00  escribir_memoria
+076C  leer
+0C54  MAIN
+0038  @const511
+005A  @const512
+007C  @const513
+009A  @const514
+00BC  @const515
+00D2  @const516
+00EA  @const517
+0104  @const518
+0122  @const520
+0142  @const521
+0158  @const522
+017A  @const523
+0198  @const524
+01BA  @const525
+01DA  @const526
+01FA  @const527
+0210  @const530
+0230  @const531
+024C  @const532
+0264  @const533
+0284  @const534
+02A4  @const535
+02C4  @const536
+02E0  @const537
+0302  @const538
+0320  @const539
+0336  @const540
+034E  @const541
+036A  @const542
+0382  @const543
+03A4  @const544
+03C6  @const545
+03E8  @const546
+040A  @const547
+042C  @const548
+0446  @const549
+0466  @const550
+0488  @const551
+04A8  @const552
+04C6  @const554
+04E8  @const556
+0508  @const558
+0522  @const560
+053C  @const562
+055A  @const566
+0570  @const599
+0C54  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+0647  inicio
+0654  menu
+0704  admin
+0B50  David
+07E8  Miguel
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Proyecto arquitectura c\LCD-TECLADO_MENU_CAM _CLA\
+
+Project Files:
+    menu cambio de clave.c
+    ..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ..\..\Program Files (x86)\PICC\drivers\math.h
+    ..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+    ..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+
+Units:
+    C:\Proyecto arquitectura c\LCD-TECLADO_MENU_CAM _CLA\menu cambio de clave.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      menu cambio de clave.err
+    Ext Symbols: menu cambio de clave.esym
+    INHX32:      menu cambio de clave.hex
+    Symbols:     menu cambio de clave.sym
+    List:        menu cambio de clave.lst
+    Debug/COFF:  menu cambio de clave.cof
+    Project:     menu cambio de clave.PJT
+    Call Tree:   menu cambio de clave.tre
+    Statistics:  menu cambio de clave.sta

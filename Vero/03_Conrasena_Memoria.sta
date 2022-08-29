@@ -1,0 +1,110 @@
+
+ROM used: 7246 (22%)
+          7246 (22%) including unused fragments
+
+          1 Average locations per line
+          6 Average locations per statement
+
+RAM used: 45 (2%) at main() level
+          56 (3%) worst case
+
+Stack used: 5 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  578   416  33  03_Conrasena_Memoria.c
+  426     0   0  ..\..\Program Files (x86)\PICC\devices\18F4550.h
+ 1273   359  28  ..\..\Program Files (x86)\PICC\drivers\stdlib.h
+   28     0   0  ..\..\Program Files (x86)\PICC\drivers\stddef.h
+  409   121  10  ..\..\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  ..\..\Program Files (x86)\PICC\drivers\ctype.h
+ 2104   238  19  ..\..\Program Files (x86)\PICC\drivers\math.h
+  170    62   5  ..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+  140    45   4  ..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+   73    24   2  ..\..\Program Files (x86)\PICC\drivers\24C512.c
+----- -----
+ 5229  1265 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   0   1             @delay_ms1
+0     56   0   2             @ITOF
+0    120   1  10             @FLT
+0     20   0   0             @const449
+0     66   0   3   419  6.0  lcd_send_nibble
+0     64   0   3   262  4.3  lcd_send_byte
+0     96   1   2   406  4.7  lcd_init
+0     58   0   4   336  6.0  lcd_gotoxy
+0     34   0   0             @goto11610
+0    116   1   1   517  5.2  lcd_putc
+0     32   0   0             @const472
+0      4   0   0     3  0.0  kbd_init
+0    246   2   4  4276 10.0  kbd_getc
+0     34   0   0             @goto11649
+0    104   1   3             @I2C_READ_1
+0    108   1   1             @I2C_WRITE_1
+0    154   1   5   216  2.9  read_ext_eeprom
+0    380   3   2  2331 10.3  teclado
+0     34   0   0             @goto11789
+0     98   1   1   473  7.6  un_digito
+0     84   1   1   136  3.9  escribir_memoria
+0     60   0   3   119  3.4  leer
+0     62   0   2   119  3.4  leer_men_ext
+0   3766  26   1 12833  6.0  MAIN
+0     30   0   0  2331 10.3  @const526
+0     34   0   0             @const527
+0     50   0   0   473  7.6  @const528
+0     46   0   0   136  3.9  @const529
+0     48   0   0   136  3.9  @const531
+0     50   0   0   119  3.4  @const532
+0     48   0   0   119  3.4  @const533
+0     40   0   0   473  7.6  @const534
+0     38   0   0   136  3.9  @const537
+0     44   0   0   119  3.4  @const538
+0     48   0   0   119  3.4  @const539
+0     48   0   0  1053  4.3  @const540
+0     44   0   0  1053  4.3  @const541
+0     50   0   0             @const542
+0     46   0   0             @const543
+0     38   0   0   223  2.3  @const544
+0     40   0   0 15932  6.0  @const545
+0     44   0   0             @const546
+0     40   0   0             @const547
+0     34   0   0   223  2.3  @const548
+0     34   0   0   223  2.3  @const549
+0     34   0   0 15830  6.0  @const550
+0     34   0   0 15830  6.0  @const551
+0     34   0   0             @const552
+0     26   0   0             @const553
+0     32   0   0             @const554
+0     34   0   0             @const555
+0     32   0   0             @const556
+0     30   0   0             @const557
+0     34   0   0             @const559
+0     32   0   0             @const561
+0     26   0   0             @const563
+0     26   0   0             @const565
+0     30   0   0             @const567
+0     32   0   0             @const569
+0     46   0   0             @const570
+0     32   0   0             @const602
+
+Program metrics:
+    Functions               32
+    Statements              1265
+    Comments                1368
+    Volume (V)              107956
+    Difficilty (D)          164.7
+    Effort to implement (E) 17783116
+    Time to implement (T)   274 hours, 26 minutes
+    Est Delivered Bugs (B)  23
+    Cyclomatic Complexity   174
+    Maintainability (MI)    36
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  7242  25522  
+
+
+

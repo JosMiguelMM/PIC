@@ -1,0 +1,194 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B     RS_bit
+00C     lcdline
+00D     kbd_getc.kbd_call_count
+00E.0   kbd_getc.kbd_down
+00E.1   flag
+00F     kbd_getc.last_key
+010     kbd_getc.col
+011     i
+012     b
+013     dato
+014-017 clave
+018-01B datoi
+01C-01F datoe
+020     adres
+021     dato1
+022     dato2
+023     datom
+024-027 valor
+028-029 segundos
+02A-02B auxsegundos
+02C     kbd_getc.kchar
+02C     lcd_init.i
+02C     teclado.@SCRATCH1
+02C     un_digito.@SCRATCH1
+02C     escribir_memoria.@SCRATCH1
+02C     leer.@SCRATCH1
+02C     leer_men_ext.@SCRATCH1
+02C     MAIN.@SCRATCH1
+02D     kbd_getc.row
+02D     lcd_putc.c
+02D     lcd_init.@SCRATCH1
+02D     teclado.@SCRATCH2
+02D     leer.@SCRATCH2
+02D     leer_men_ext.@SCRATCH2
+02E-02F read_ext_eeprom.address
+02E-02F @ITOF.P1
+02E-031 @FLT.P2
+02E     lcd_gotoxy.x
+02E     @delay_ms1.P1
+02E     kbd_getc.@SCRATCH1
+02E     leer.@SCRATCH3
+02F     lcd_gotoxy.y
+02F     kbd_getc.@SCRATCH2
+030     read_ext_eeprom.data
+030     lcd_gotoxy.address
+031     @I2C_READ_1.P1
+031     lcd_gotoxy.@SCRATCH1
+031     read_ext_eeprom.@SCRATCH1
+032     lcd_send_byte.address
+032-035 @FLT.P1
+032     @I2C_READ_1.@SCRATCH1
+032     read_ext_eeprom.@SCRATCH2
+033     lcd_send_byte.n
+033     @I2C_WRITE_1.P1
+033     @I2C_READ_1.@SCRATCH2
+034     lcd_send_byte.@SCRATCH1
+035     lcd_send_nibble.nibble
+036     lcd_send_nibble.RS_bit
+036     @FLT.@SCRATCH1
+037     lcd_send_nibble.x
+037     @FLT.@SCRATCH2
+F81     portkbd
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_HIGH
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBE     CCP_1_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+05B8  @delay_ms1
+097C  @ITOF
+09B4  @FLT
+0004  LCD_INIT_STRING
+05DE  lcd_send_nibble
+0620  lcd_send_byte
+0660  lcd_init
+06C4  lcd_gotoxy
+06FE  @goto11610
+0720  lcd_putc
+0018  KEYS
+06C0  kbd_init
+0A2C  kbd_getc
+0B22  @goto11649
+083C  @I2C_READ_1
+07D0  @I2C_WRITE_1
+08A4  read_ext_eeprom
+0B44  teclado
+0CC0  @goto11789
+0CE2  un_digito
+0D44  escribir_memoria
+0794  leer
+093E  leer_men_ext
+0D98  MAIN
+0038  @const526
+0056  @const527
+0078  @const528
+00AA  @const529
+00D8  @const531
+0108  @const532
+013A  @const533
+016A  @const534
+0192  @const537
+01B8  @const538
+01E4  @const539
+0214  @const540
+0244  @const541
+0270  @const542
+02A2  @const543
+02D0  @const544
+02F6  @const545
+031E  @const546
+034A  @const547
+0372  @const548
+0394  @const549
+03B6  @const550
+03D8  @const551
+03FA  @const552
+041C  @const553
+0436  @const554
+0456  @const555
+0478  @const556
+0498  @const557
+04B6  @const559
+04D8  @const561
+04F8  @const563
+0512  @const565
+052C  @const567
+054A  @const569
+056A  @const570
+0598  @const602
+0D98  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+06E9  inicio
+06F6  menu
+0757  admin
+07DA  camilo
+0AF5  vero
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Proyecto arquitectura c\Vero\
+
+Project Files:
+    03_Conrasena_Memoria.c
+    ..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ..\..\Program Files (x86)\PICC\drivers\math.h
+    ..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+    ..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+    ..\..\Program Files (x86)\PICC\drivers\24C512.c
+
+Units:
+    C:\Proyecto arquitectura c\Vero\03_Conrasena_Memoria.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      03_Conrasena_Memoria.err
+    Ext Symbols: 03_Conrasena_Memoria.esym
+    INHX32:      03_Conrasena_Memoria.hex
+    Symbols:     03_Conrasena_Memoria.sym
+    List:        03_Conrasena_Memoria.lst
+    Debug/COFF:  03_Conrasena_Memoria.cof
+    Project:     03_Conrasena_Memoria.PJT
+    Call Tree:   03_Conrasena_Memoria.tre
+    Statistics:  03_Conrasena_Memoria.sta

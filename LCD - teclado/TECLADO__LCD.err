@@ -1,0 +1,7 @@
+>>> Warning 214 "TECLADO__LCD.c" Line 203(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "TECLADO__LCD.c" Line 263(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "TECLADO__LCD.c" Line 414(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 202 "TECLADO__LCD.c" Line 15(11,15): Variable never used:   dato
+>>> Warning 202 "TECLADO__LCD.c" Line 17(7,12): Variable never used:   valor
+      Memory usage:   ROM=19%      RAM=2% - 2%
+      0 Errors,  5 Warnings.

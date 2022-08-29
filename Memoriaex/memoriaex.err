@@ -1,0 +1,9 @@
+>>> Warning 214 "memoriaex.c" Line 255(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "memoriaex.c" Line 316(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "memoriaex.c" Line 396(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "memoriaex.c" Line 501(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "memoriaex.c" Line 581(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 202 "memoriaex.c" Line 17(11,15): Variable never used:   dato
+>>> Warning 202 "memoriaex.c" Line 19(7,12): Variable never used:   valor
+      Memory usage:   ROM=25%      RAM=2% - 3%
+      0 Errors,  7 Warnings.

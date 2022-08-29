@@ -1,0 +1,129 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005     RS_bit
+006     lcdline
+007     kbd_getc.kbd_call_count
+008.0   kbd_getc.kbd_down
+009     kbd_getc.last_key
+00A     kbd_getc.col
+00B-00E clave
+00F-010 auxsegundos
+011-012 segundos
+013     i
+014     b
+015     datom
+016     kbd_getc.kchar
+016     lcd_init.i
+016     teclado.@SCRATCH1
+016     MAIN.@SCRATCH1
+017     kbd_getc.row
+017     lcd_putc.c
+017     lcd_init.@SCRATCH1
+017     teclado.@SCRATCH2
+018-01B @FLT.P1
+018     lcd_gotoxy.x
+018     @delay_ms1.P1
+018-019 @ITOF.P2
+018     kbd_getc.@SCRATCH1
+018     teclado.@SCRATCH3
+019     lcd_gotoxy.y
+019     kbd_getc.@SCRATCH2
+019     teclado.@SCRATCH4
+01A     lcd_gotoxy.address
+01A     teclado.@SCRATCH5
+01B     lcd_gotoxy.@SCRATCH1
+01B     teclado.@SCRATCH6
+01C     lcd_send_byte.address
+01C-01F @FLT.P1
+01D     lcd_send_byte.n
+01E     lcd_send_byte.@SCRATCH1
+01F     lcd_send_nibble.nibble
+020     lcd_send_nibble.RS_bit
+020     @FLT.@SCRATCH1
+021     lcd_send_nibble.x
+021     @FLT.@SCRATCH2
+F81     portkbd
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_HIGH
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBE     CCP_1_LOW
+FBE     CCP_1_HIGH
+FBE     CCP_1
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0190  @delay_ms1
+0004  LCD_INIT_STRING
+01B6  lcd_send_nibble
+01F8  lcd_send_byte
+0238  lcd_init
+029C  lcd_gotoxy
+02D6  @goto10087
+02F8  lcd_putc
+0018  KEYS
+0298  kbd_init
+041C  kbd_getc
+036C  @ITOF
+03A4  @FLT
+0512  @goto10138
+0534  teclado
+0038  @const105
+0692  @goto10213
+06B4  MAIN
+004A  @const114
+006A  @const115
+008A  @const116
+00A0  @const117
+00BA  @const118
+00D0  @const119
+00EA  @const120
+010A  @const121
+012A  @const122
+0146  @const123
+015E  @const124
+0174  @const125
+06B4  @cinit
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Proyecto arquitectura c\jeimy\
+
+Project Files:
+    lcd_teclado.c
+    ..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\Program Files (x86)\PICC\drivers\LCD4X20_3PIN.c
+    ..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+
+Units:
+    C:\Proyecto arquitectura c\jeimy\lcd_teclado.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      lcd_teclado.err
+    Ext Symbols: lcd_teclado.esym
+    INHX32:      lcd_teclado.hex
+    Symbols:     lcd_teclado.sym
+    List:        lcd_teclado.lst
+    Debug/COFF:  lcd_teclado.cof
+    Project:     lcd_teclado.PJT
+    Call Tree:   lcd_teclado.tre
+    Statistics:  lcd_teclado.sta

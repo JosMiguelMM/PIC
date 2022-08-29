@@ -1,0 +1,10 @@
+>>> Warning 203 "C:\Program Files (x86)\PICC\drivers\DS1307A.c" Line 233(1,1): Condition always TRUE
+>>> Warning 214 "ds1307.c" Line 295(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "ds1307.c" Line 356(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "ds1307.c" Line 436(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "ds1307.c" Line 541(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "ds1307.c" Line 621(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 202 "ds1307.c" Line 17(11,15): Variable never used:   dato
+>>> Warning 202 "ds1307.c" Line 19(7,12): Variable never used:   valor
+      Memory usage:   ROM=29%      RAM=7% - 8%
+      0 Errors,  8 Warnings.

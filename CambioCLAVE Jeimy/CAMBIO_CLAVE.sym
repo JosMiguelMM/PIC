@@ -1,0 +1,198 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005     RS_bit
+006     lcdline
+007     kbd_getc.kbd_call_count
+008.0   kbd_getc.kbd_down
+008.1   flag
+009     kbd_getc.last_key
+00A     kbd_getc.col
+00B-057 days_of_week
+058-059 @sprintf_string
+05A-05D clave
+05E-061 datoi
+062-065 datoe
+066-067 auxsegundos
+068-069 segundos
+06A     i
+06B     b
+06C     dato1
+06D     dato2
+06E     direccion
+06F     datom
+070     kbd_getc.kchar
+070     lcd_init.i
+070     teclado.@SCRATCH1
+070     un_digito.@SCRATCH1
+070     escribir_int.@SCRATCH1
+070     memoria_int.@SCRATCH1
+070     escribir_ext.@SCRATCH1
+070     memoria_ext.@SCRATCH1
+070     MAIN.@SCRATCH1
+071     kbd_getc.row
+071-072 write_ext_eeprom.address
+071     lcd_putc.c
+071     lcd_init.@SCRATCH1
+071     teclado.@SCRATCH2
+071     un_digito.@SCRATCH2
+071     memoria_int.@SCRATCH2
+071     memoria_ext.@SCRATCH2
+072     @delay_ms1.P1
+072-073 read_ext_eeprom.address
+072-073 @ITOF.P1
+072-075 @FLT.P2
+072     lcd_gotoxy.x
+072     kbd_getc.@SCRATCH1
+072     teclado.@SCRATCH3
+072     memoria_int.@SCRATCH3
+073     write_ext_eeprom.data
+073     lcd_gotoxy.y
+073     kbd_getc.@SCRATCH2
+073     teclado.@SCRATCH4
+074.0   write_ext_eeprom.status
+074     lcd_gotoxy.address
+074     read_ext_eeprom.data
+074     teclado.@SCRATCH5
+075     @I2C_READ_1.P1
+075     lcd_gotoxy.@SCRATCH1
+075     write_ext_eeprom.@SCRATCH1
+075     read_ext_eeprom.@SCRATCH1
+075     teclado.@SCRATCH6
+076     lcd_send_byte.address
+076-079 @FLT.P1
+076     @I2C_READ_1.@SCRATCH1
+076     write_ext_eeprom.@SCRATCH2
+076     read_ext_eeprom.@SCRATCH2
+077     lcd_send_byte.n
+077     @I2C_WRITE_1.P1
+077     @I2C_READ_1.@SCRATCH2
+078     lcd_send_byte.@SCRATCH1
+079     lcd_send_nibble.nibble
+07A     lcd_send_nibble.RS_bit
+07A     @FLT.@SCRATCH1
+07B     lcd_send_nibble.x
+07B     @FLT.@SCRATCH2
+F81     portkbd
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_HIGH
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBE     CCP_1
+FBE     CCP_1_HIGH
+FBE     CCP_1_LOW
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0460  @delay_ms1
+0004  LCD_INIT_STRING
+0486  lcd_send_nibble
+04C8  lcd_send_byte
+0508  lcd_init
+056C  lcd_gotoxy
+05A6  @goto10087
+05C8  lcd_putc
+0018  KEYS
+0568  kbd_init
+08D6  kbd_getc
+0826  @ITOF
+085E  @FLT
+09CC  @goto10138
+06E4  @I2C_READ_1
+0678  @I2C_WRITE_1
+0C3E  write_ext_eeprom
+074C  read_ext_eeprom
+09EE  teclado
+0038  @const172
+0B56  @goto10440
+0B78  un_digito
+0BE8  escribir_int
+063C  memoria_int
+0D32  escribir_ext
+07E6  memoria_ext
+0D6A  MAIN
+004A  @const186
+0066  @const187
+0086  @const188
+009C  @const189
+00B6  @const190
+00CC  @const191
+00E6  @const192
+0100  @const193
+011E  @const196
+013E  @const197
+015E  @const198
+017C  @const199
+019E  @const200
+01B8  @const203
+01D4  @const204
+01F8  @const205
+021A  @const206
+0238  @const207
+0256  @const208
+0278  @const209
+0298  @const212
+02B2  @const213
+02D0  @const214
+02F2  @const215
+0312  @const216
+0332  @const217
+034E  @const218
+0370  @const219
+038E  @const220
+03B0  @const221
+03CA  @const222
+03EC  @const223
+040C  @const224
+042E  @const241
+0444  @const242
+0D6A  @cinit
+082D  menu
+0924  jeimy
+0AAB  invitado
+0980  cambio
+0B09  cambio1
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Users\hp ryzen 5\Downloads\CambioCLAVE Jeimy\
+
+Project Files:
+    CAMBIO_CLAVE.c
+    ..\..\..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+    ..\..\..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+    ..\..\..\..\Program Files (x86)\PICC\drivers\24C512.c
+    ..\..\..\..\Program Files (x86)\PICC\drivers\ds1307.c
+
+Units:
+    C:\Users\hp ryzen 5\Downloads\CambioCLAVE Jeimy\CAMBIO_CLAVE.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      CAMBIO_CLAVE.err
+    Ext Symbols: CAMBIO_CLAVE.esym
+    INHX32:      CAMBIO_CLAVE.hex
+    Symbols:     CAMBIO_CLAVE.sym
+    List:        CAMBIO_CLAVE.lst
+    Debug/COFF:  CAMBIO_CLAVE.cof
+    Project:     CAMBIO_CLAVE.PJT
+    Call Tree:   CAMBIO_CLAVE.tre
+    Statistics:  CAMBIO_CLAVE.sta

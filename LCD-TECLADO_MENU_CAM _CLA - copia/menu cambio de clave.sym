@@ -1,0 +1,182 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B     RS_bit
+00C     lcdline
+00D     kbd_getc.kbd_call_count
+00E.0   kbd_getc.kbd_down
+00E.1   flag
+00F     kbd_getc.last_key
+010     kbd_getc.col
+011     i
+012     b
+013     dato
+014-017 clave
+018-01B datoi
+01C     adres
+01D     dato1
+01E     dato2
+01F     datom
+020-023 valor
+024-025 segundos
+026-027 auxsegundos
+028     lcd_init.i
+028     kbd_getc.kchar
+028     teclado.@SCRATCH1
+028     un_digito.@SCRATCH1
+028     escribir_memoria.@SCRATCH1
+028     leer.@SCRATCH1
+028     MAIN.@SCRATCH1
+029     kbd_getc.row
+029     lcd_init.@SCRATCH1
+029     teclado.@SCRATCH2
+029     leer.@SCRATCH2
+02A-02B @ITOF.P1
+02A-02D @FLT.P2
+02A     lcd_putc.c
+02A     kbd_getc.@SCRATCH1
+02A     leer.@SCRATCH3
+02B     @delay_ms1.P1
+02B     lcd_gotoxy.x
+02B     kbd_getc.@SCRATCH2
+02C     lcd_gotoxy.y
+02D     lcd_gotoxy.address
+02E-031 @FLT.P1
+02E     lcd_gotoxy.@SCRATCH1
+02F     lcd_send_byte.address
+030     lcd_send_byte.n
+031     lcd_send_byte.@SCRATCH1
+032     lcd_send_nibble.nibble
+032     @FLT.@SCRATCH1
+033     lcd_send_nibble.RS_bit
+033     @FLT.@SCRATCH2
+034     lcd_send_nibble.x
+F81     portkbd
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_HIGH
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBE     CCP_1_HIGH
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+051A  @delay_ms1
+0732  @ITOF
+076A  @FLT
+0004  LCD_INIT_STRING
+0540  lcd_send_nibble
+0582  lcd_send_byte
+05C2  lcd_init
+0626  lcd_gotoxy
+0660  @goto11610
+0682  lcd_putc
+0018  KEYS
+0622  kbd_init
+07E2  kbd_getc
+08D8  @goto11649
+08FA  teclado
+0B06  @goto11724
+0B28  un_digito
+0B8A  escribir_memoria
+06F6  leer
+0BDE  MAIN
+0038  @const511
+0054  @const512
+0076  @const513
+0096  @const514
+00B6  @const515
+00CC  @const516
+00DE  @const517
+00FE  @const519
+011E  @const520
+0140  @const521
+015E  @const522
+017E  @const523
+019C  @const524
+01BC  @const525
+01D8  @const526
+01FA  @const529
+021A  @const530
+0238  @const532
+0252  @const533
+0270  @const534
+0294  @const535
+02B6  @const536
+02D2  @const539
+02F4  @const540
+030E  @const541
+032E  @const542
+0350  @const543
+0370  @const544
+038E  @const546
+03B0  @const548
+03D0  @const550
+03EA  @const552
+0404  @const554
+0422  @const558
+0444  @const559
+0462  @const560
+0480  @const561
+049E  @const562
+04BE  @const563
+04D8  @const565
+04FA  @const584
+0BDE  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+060C  inicio
+0619  menu
+06B9  admin
+0A65  David
+079A  Miguel
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Proyecto arquitectura c\LCD-TECLADO_MENU_CAM _CLA - copia\
+
+Project Files:
+    menu cambio de clave.c
+    ..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ..\..\Program Files (x86)\PICC\drivers\math.h
+    ..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+    ..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+
+Units:
+    C:\Proyecto arquitectura c\LCD-TECLADO_MENU_CAM _CLA - copia\menu cambio de clave.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      menu cambio de clave.err
+    Ext Symbols: menu cambio de clave.esym
+    INHX32:      menu cambio de clave.hex
+    Symbols:     menu cambio de clave.sym
+    List:        menu cambio de clave.lst
+    Debug/COFF:  menu cambio de clave.cof
+    Project:     menu cambio de clave.PJT
+    Call Tree:   menu cambio de clave.tre
+    Statistics:  menu cambio de clave.sta

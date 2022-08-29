@@ -1,0 +1,9 @@
+>>> Warning 214 "menu cambio de clave.c" Line 234(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "menu cambio de clave.c" Line 295(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "menu cambio de clave.c" Line 375(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "menu cambio de clave.c" Line 480(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "menu cambio de clave.c" Line 560(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 202 "menu cambio de clave.c" Line 16(11,15): Variable never used:   dato
+>>> Warning 202 "menu cambio de clave.c" Line 18(7,12): Variable never used:   valor
+      Memory usage:   ROM=23%      RAM=2% - 3%
+      0 Errors,  7 Warnings.

@@ -1,0 +1,171 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B     RS_bit
+00C     lcdline
+00D     kbd_getc.kbd_call_count
+00E.0   kbd_getc.kbd_down
+00E.1   flag
+00F     kbd_getc.last_key
+010     kbd_getc.col
+011     i
+012     b
+013     dato
+014-017 clave
+018     datom
+019-01C valor
+01D-01E segundos
+01F-020 auxsegundos
+021     kbd_getc.kchar
+021     lcd_init.i
+021     teclado.@SCRATCH1
+021     un_digito.@SCRATCH1
+021     MAIN.@SCRATCH1
+022     kbd_getc.row
+022     lcd_putc.c
+022     lcd_init.@SCRATCH1
+022     teclado.@SCRATCH2
+023-024 @ITOF.P1
+023     lcd_gotoxy.x
+023     @delay_ms1.P1
+023-026 @FLT.P2
+023     kbd_getc.@SCRATCH1
+024     lcd_gotoxy.y
+024     kbd_getc.@SCRATCH2
+025     lcd_gotoxy.address
+026     lcd_gotoxy.@SCRATCH1
+027     lcd_send_byte.address
+027-02A @FLT.P1
+028     lcd_send_byte.n
+029     lcd_send_byte.@SCRATCH1
+02A     lcd_send_nibble.nibble
+02B     lcd_send_nibble.RS_bit
+02B     @FLT.@SCRATCH1
+02C     lcd_send_nibble.x
+02C     @FLT.@SCRATCH2
+F81     portkbd
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_HIGH
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBE     CCP_1_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+04CE  @delay_ms1
+06AA  @ITOF
+06E2  @FLT
+0004  LCD_INIT_STRING
+04F4  lcd_send_nibble
+0536  lcd_send_byte
+0576  lcd_init
+05DA  lcd_gotoxy
+0614  @goto11610
+0636  lcd_putc
+0018  KEYS
+05D6  kbd_init
+075A  kbd_getc
+0850  @goto11649
+0872  teclado
+098C  @goto11716
+09AE  un_digito
+0A10  MAIN
+0038  @const505
+005A  @const506
+007C  @const507
+009A  @const508
+00BC  @const509
+00D2  @const510
+00EA  @const511
+0104  @const512
+0122  @const514
+0142  @const515
+0158  @const516
+017A  @const517
+0198  @const518
+01BA  @const519
+01DA  @const520
+01FA  @const521
+0210  @const524
+0230  @const525
+024C  @const526
+0264  @const527
+0284  @const528
+02A4  @const529
+02C4  @const530
+02E0  @const531
+0302  @const532
+0320  @const533
+0336  @const534
+034E  @const535
+036A  @const536
+0382  @const537
+03A4  @const538
+03C4  @const539
+03E6  @const541
+0404  @const543
+0426  @const545
+0446  @const547
+0460  @const549
+047A  @const551
+0498  @const555
+04AE  @const583
+0A10  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+0525  inicio
+0532  menu
+05E0  admin
+097F  David
+06B6  Miguel
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Proyecto arquitectura c\LCD - teclado\
+
+Project Files:
+    TECLADO__LCD.c
+    ..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ..\..\Program Files (x86)\PICC\drivers\math.h
+    ..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+    ..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+
+Units:
+    C:\Proyecto arquitectura c\LCD - teclado\TECLADO__LCD.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      TECLADO__LCD.err
+    Ext Symbols: TECLADO__LCD.esym
+    INHX32:      TECLADO__LCD.hex
+    Symbols:     TECLADO__LCD.sym
+    List:        TECLADO__LCD.lst
+    Debug/COFF:  TECLADO__LCD.cof
+    Project:     TECLADO__LCD.PJT
+    Call Tree:   TECLADO__LCD.tre
+    Statistics:  TECLADO__LCD.sta

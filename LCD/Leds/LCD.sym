@@ -1,0 +1,107 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B     RS_bit
+00C     lcdline
+00D     kbd_getc.kbd_call_count
+00E.0   kbd_getc.kbd_down
+00F     kbd_getc.last_key
+010     kbd_getc.col
+011     lcd_init.i
+011     MAIN.@SCRATCH1
+012     lcd_putc.c
+012     lcd_init.@SCRATCH1
+013     @delay_ms1.P1
+013     lcd_gotoxy.x
+014     lcd_gotoxy.y
+015     lcd_gotoxy.address
+016     lcd_gotoxy.@SCRATCH1
+017     lcd_send_byte.address
+018     lcd_send_byte.n
+019     lcd_send_byte.@SCRATCH1
+01A     lcd_send_nibble.nibble
+01B     lcd_send_nibble.RS_bit
+01C     lcd_send_nibble.x
+F81     portkbd
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_HIGH
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBE     CCP_1_HIGH
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0124  @delay_ms1
+0004  LCD_INIT_STRING
+013E  lcd_send_nibble
+0174  lcd_send_byte
+01B4  lcd_init
+0218  lcd_gotoxy
+0252  @goto11606
+0274  lcd_putc
+0214  kbd_init
+02E8  MAIN
+0018  @const489
+003A  @const490
+005C  @const491
+0084  @const492
+00A6  @const493
+00C6  @const494
+00DE  @const495
+0104  @const496
+02E8  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+0192  inicio
+019F  menu
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Proyecto arquitectura c\LCD\Leds\
+
+Project Files:
+    LCD.c
+    ..\..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ..\..\..\Program Files (x86)\PICC\drivers\math.h
+    ..\..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+    ..\..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+
+Units:
+    C:\Proyecto arquitectura c\LCD\Leds\LCD.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      LCD.err
+    Ext Symbols: LCD.esym
+    INHX32:      LCD.hex
+    Symbols:     LCD.sym
+    List:        LCD.lst
+    Debug/COFF:  LCD.cof
+    Project:     LCD.PJT
+    Call Tree:   LCD.tre
+    Statistics:  LCD.sta

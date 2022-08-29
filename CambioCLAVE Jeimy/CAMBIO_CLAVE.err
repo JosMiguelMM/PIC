@@ -1,0 +1,6 @@
+>>> Warning 203 "C:\Program Files (x86)\PICC\drivers\ds1307.c" Line 233(1,1): Condition always TRUE
+>>> Warning 214 "CAMBIO_CLAVE.c" Line 114(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "CAMBIO_CLAVE.c" Line 239(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "CAMBIO_CLAVE.c" Line 431(1,1): Operator precedance rules may not be as intended, use () to clarify
+      Memory usage:   ROM=19%      RAM=6% - 6%
+      0 Errors,  4 Warnings.

@@ -1,0 +1,209 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B     RS_bit
+00C     lcdline
+00D     kbd_getc.kbd_call_count
+00E.0   kbd_getc.kbd_down
+00E.1   flag
+00F     kbd_getc.last_key
+010     kbd_getc.col
+011     i
+012     b
+013     dato
+014-017 clave
+018-01B datoi
+01C-01F datoe
+020     adres
+021     dato1
+022     dato2
+023     datom
+024-027 valor
+028-029 segundos
+02A-02B auxsegundos
+02C     kbd_getc.kchar
+02C     lcd_init.i
+02C     teclado.@SCRATCH1
+02C     un_digito.@SCRATCH1
+02C     escribir_memoria_ext.@SCRATCH1
+02C     leer.@SCRATCH1
+02C     leer_men_ext.@SCRATCH1
+02C     MAIN.@SCRATCH1
+02D-02E write_ext_eeprom.address
+02D     kbd_getc.row
+02D     lcd_init.@SCRATCH1
+02D     teclado.@SCRATCH2
+02D     leer.@SCRATCH2
+02D     leer_men_ext.@SCRATCH2
+02E-02F @ITOF.P1
+02E-031 @FLT.P2
+02E-02F read_ext_eeprom.address
+02E     lcd_putc.c
+02E     kbd_getc.@SCRATCH1
+02E     leer.@SCRATCH3
+02F     lcd_gotoxy.x
+02F     write_ext_eeprom.data
+02F     @delay_ms1.P1
+02F     kbd_getc.@SCRATCH2
+030     read_ext_eeprom.data
+030     lcd_gotoxy.y
+030.0   write_ext_eeprom.status
+031     @I2C_READ_1.P1
+031     lcd_gotoxy.address
+031     write_ext_eeprom.@SCRATCH1
+031     read_ext_eeprom.@SCRATCH1
+032-035 @FLT.P1
+032     lcd_gotoxy.@SCRATCH1
+032     @I2C_READ_1.@SCRATCH1
+032     write_ext_eeprom.@SCRATCH2
+032     read_ext_eeprom.@SCRATCH2
+033     lcd_send_byte.address
+033     @I2C_WRITE_1.P1
+033     @I2C_READ_1.@SCRATCH2
+034     lcd_send_byte.n
+035     lcd_send_byte.@SCRATCH1
+036     lcd_send_nibble.nibble
+036     @FLT.@SCRATCH1
+037     lcd_send_nibble.RS_bit
+037     @FLT.@SCRATCH2
+038     lcd_send_nibble.x
+F81     portkbd
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBB     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1_HIGH
+FBE     CCP_1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+0590  @delay_ms1
+0954  @ITOF
+098C  @FLT
+0004  LCD_INIT_STRING
+05B6  lcd_send_nibble
+05F8  lcd_send_byte
+0638  lcd_init
+069C  lcd_gotoxy
+06D6  @goto11610
+06F8  lcd_putc
+0018  KEYS
+0698  kbd_init
+0A04  kbd_getc
+0AFA  @goto11649
+0814  @I2C_READ_1
+07A8  @I2C_WRITE_1
+0DAC  write_ext_eeprom
+087C  read_ext_eeprom
+0B1C  teclado
+0D28  @goto11797
+0D4A  un_digito
+0EA0  escribir_memoria_ext
+076C  leer
+0916  leer_men_ext
+0ED6  MAIN
+0038  @const526
+005A  @const527
+007C  @const528
+009A  @const529
+00BC  @const530
+00D2  @const531
+00EA  @const532
+0104  @const533
+0122  @const535
+0142  @const536
+0158  @const537
+017A  @const538
+0198  @const539
+01BA  @const540
+01DA  @const541
+01FA  @const542
+0210  @const545
+0230  @const546
+024C  @const547
+0264  @const548
+0284  @const549
+02A4  @const550
+02C4  @const551
+02E0  @const552
+0302  @const553
+0320  @const554
+0336  @const555
+034E  @const556
+036A  @const557
+0382  @const558
+03A4  @const559
+03C6  @const560
+03E8  @const561
+040A  @const562
+042C  @const563
+0446  @const564
+0466  @const565
+0488  @const566
+04A8  @const567
+04C6  @const569
+04E8  @const571
+0508  @const573
+0522  @const575
+053C  @const577
+055A  @const581
+0570  @const614
+0ED6  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+0788  inicio
+0797  menu
+0860  admin
+0CB9  David
+0951  Miguel
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Proyecto arquitectura c\Memoria\
+
+Project Files:
+    memoriaex.c
+    ..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ..\..\Program Files (x86)\PICC\drivers\math.h
+    ..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+    ..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+    ..\..\Program Files (x86)\PICC\drivers\24C512.c
+
+Units:
+    C:\Proyecto arquitectura c\Memoria\memoriaex.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      memoriaex.err
+    Ext Symbols: memoriaex.esym
+    INHX32:      memoriaex.hex
+    Symbols:     memoriaex.sym
+    List:        memoriaex.lst
+    Debug/COFF:  memoriaex.cof
+    Project:     memoriaex.PJT
+    Call Tree:   memoriaex.tre
+    Statistics:  memoriaex.sta

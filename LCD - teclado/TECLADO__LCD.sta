@@ -1,0 +1,106 @@
+
+ROM used: 6344 (19%)
+          6344 (19%) including unused fragments
+
+          1 Average locations per line
+          5 Average locations per statement
+
+RAM used: 34 (2%) at main() level
+          45 (2%) worst case
+
+Stack used: 5 worst case (out of 31 total available)
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  571   396  32  TECLADO__LCD.c
+  426     0   0  ..\..\Program Files (x86)\PICC\devices\18F4550.h
+ 1273   359  29  ..\..\Program Files (x86)\PICC\drivers\stdlib.h
+   28     0   0  ..\..\Program Files (x86)\PICC\drivers\stddef.h
+  409   121  10  ..\..\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  ..\..\Program Files (x86)\PICC\drivers\ctype.h
+ 2104   238  19  ..\..\Program Files (x86)\PICC\drivers\math.h
+  170    62   5  ..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+  140    45   4  ..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+----- -----
+ 5149  1221 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   0   1             @delay_ms1
+0     56   0   2             @ITOF
+0    120   1  10             @FLT
+0     20   0   0             @const449
+0     66   1   3   419  6.0  lcd_send_nibble
+0     64   1   3   262  4.3  lcd_send_byte
+0     96   1   2   406  4.7  lcd_init
+0     58   0   4   336  6.0  lcd_gotoxy
+0     34   0   0             @goto11610
+0    116   1   1   517  5.2  lcd_putc
+0     32   0   0             @const472
+0      4   0   0     3  0.0  kbd_init
+0    246   2   4  4265 10.1  kbd_getc
+0     34   0   0             @goto11649
+0    282   2   2  1831 10.2  teclado
+0     34   0   0             @goto11716
+0     98   1   1   473  7.6  un_digito
+0   3768  30   1 13169  5.5  MAIN
+0     34   0   0             @const505
+0     34   0   0             @const506
+0     30   0   0             @const507
+0     34   0   0             @const508
+0     22   0   0             @const509
+0     24   0   0             @const510
+0     26   0   0             @const511
+0     30   0   0             @const512
+0     32   0   0             @const514
+0     22   0   0             @const515
+0     34   0   0             @const516
+0     30   0   0             @const517
+0     34   0   0             @const518
+0     32   0   0             @const519
+0     32   0   0             @const520
+0     22   0   0             @const521
+0     32   0   0             @const524
+0     28   0   0             @const525
+0     24   0   0             @const526
+0     32   0   0             @const527
+0     32   0   0             @const528
+0     32   0   0             @const529
+0     28   0   0             @const530
+0     34   0   0             @const531
+0     30   0   0             @const532
+0     22   0   0             @const533
+0     24   0   0             @const534
+0     28   0   0             @const535
+0     24   0   0             @const536
+0     34   0   0             @const537
+0     32   0   0             @const538
+0     34   0   0             @const539
+0     30   0   0             @const541
+0     34   0   0             @const543
+0     32   0   0             @const545
+0     26   0   0             @const547
+0     26   0   0             @const549
+0     30   0   0             @const551
+0     22   0   0             @const555
+0     32   0   0             @const583
+
+Program metrics:
+    Functions               10
+    Statements              1221
+    Comments                1436
+    Volume (V)              27537
+    Difficilty (D)          59.0
+    Effort to implement (E) 1624648
+    Time to implement (T)   25 hours, 4 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   64
+    Maintainability (MI)    36
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  6340  26424  
+
+
+

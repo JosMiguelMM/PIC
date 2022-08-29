@@ -1,0 +1,10 @@
+>>> Warning 203 "C:\Program Files (x86)\PICC\drivers\DS1307A.c" Line 233(1,1): Condition always TRUE
+>>> Warning 203 "Motor paso a paso.c" Line 300(1,1): Condition always TRUE
+>>> Warning 203 "Motor paso a paso.c" Line 337(1,1): Condition always TRUE
+>>> Warning 214 "Motor paso a paso.c" Line 454(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "Motor paso a paso.c" Line 515(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "Motor paso a paso.c" Line 595(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "Motor paso a paso.c" Line 767(1,1): Operator precedance rules may not be as intended, use () to clarify
+>>> Warning 214 "Motor paso a paso.c" Line 847(1,1): Operator precedance rules may not be as intended, use () to clarify
+      Memory usage:   ROM=37%      RAM=7% - 8%
+      0 Errors,  8 Warnings.

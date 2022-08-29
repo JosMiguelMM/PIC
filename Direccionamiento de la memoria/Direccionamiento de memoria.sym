@@ -1,0 +1,268 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @SCRATCH
+005-006 strtok.save
+007-00A _Randseed
+00B     RS_bit
+00C     lcdline
+00D     kbd_getc.kbd_call_count
+00E.0   kbd_getc.kbd_down
+00E.1   flag
+00E.2   espacio_vacio
+00F     kbd_getc.last_key
+010     kbd_getc.col
+011-05D days_of_week
+05E-05F @sprintf_string
+060     i
+061     b
+062-065 clave
+066-069 datoi
+06A-06D datoe
+06E     adres
+06F     dato1
+070     dato2
+071     cantidad
+072     datom
+073-076 valor
+077-078 segundos
+079-07A auxsegundos
+07B     ide
+07C     hour
+07D     min
+07E     day
+07F     mth
+080     year
+081     dow
+082     sec
+083-08A time
+08B     contador
+08C     lcd_init.i
+08C     kbd_getc.kchar
+08C     ds1307_get_date.@SCRATCH1
+08C     ds1307_get_time.@SCRATCH1
+08C     teclado.@SCRATCH1
+08C     un_digito.@SCRATCH1
+08C     escribir_memoria_ext.@SCRATCH1
+08C     leer.@SCRATCH1
+08C     leer_men_ext.@SCRATCH1
+08C     hora_fecha.@SCRATCH1
+08C     buscar_pos.@SCRATCH1
+08C     mostrar_reporte.@SCRATCH1
+08C     MAIN.@SCRATCH1
+08D-08E write_ext_eeprom.address
+08D     kbd_getc.row
+08D     @PRINTF_D_466.P1
+08D     lcd_init.@SCRATCH1
+08D     teclado.@SCRATCH2
+08D     leer.@SCRATCH2
+08D     leer_men_ext.@SCRATCH2
+08D     mostrar_reporte.@SCRATCH2
+08E-08F read_ext_eeprom.address
+08E-091 @FLT.P1
+08E     @PRINTF_D_466.P2
+08E-08F @ITOF.P3
+08E     kbd_getc.@SCRATCH1
+08E     leer.@SCRATCH3
+08F     write_ext_eeprom.data
+08F     kbd_getc.@SCRATCH2
+08F     @PRINTF_D_466.@SCRATCH1
+090     read_ext_eeprom.data
+090     @I2C_WRITE_1.P1
+090     @I2C_READ_1.P2
+090.0   write_ext_eeprom.status
+090     @PRINTF_D_466.@SCRATCH2
+091     @I2C_READ_2.P1
+091     ds1307_bcd2bin.bcd_value
+091     @I2C_READ_1.@SCRATCH1
+091     write_ext_eeprom.@SCRATCH1
+091     read_ext_eeprom.@SCRATCH1
+091     @PRINTF_D_466.@SCRATCH3
+092-095 @FLT.P1
+092     ds1307_bcd2bin.temp
+092     @I2C_READ_1.@SCRATCH2
+092     @I2C_READ_2.@SCRATCH1
+092     write_ext_eeprom.@SCRATCH2
+092     read_ext_eeprom.@SCRATCH2
+092     @PRINTF_D_466.@SCRATCH4
+093     lcd_putc.c
+093     @I2C_WRITE_2.P1
+093     @DIV88.P2
+093     ds1307_bcd2bin.@SCRATCH1
+093     @I2C_READ_2.@SCRATCH2
+094     @delay_ms1.P1
+094     @DIV88.P2
+094     lcd_gotoxy.x
+095     lcd_gotoxy.y
+095     @DIV88.@SCRATCH1
+096     lcd_gotoxy.address
+096     @FLT.@SCRATCH1
+097     @FLT.@SCRATCH2
+097     lcd_gotoxy.@SCRATCH1
+098     lcd_send_byte.address
+099     lcd_send_byte.n
+09A     lcd_send_byte.@SCRATCH1
+09B     lcd_send_nibble.nibble
+09C     lcd_send_nibble.RS_bit
+09D     lcd_send_nibble.x
+F81     portkbd
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2_HIGH
+FBB     CCP_2
+FBE     CCP_1_LOW
+FBE     CCP_1_HIGH
+FBE     CCP_1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+06DC  @delay_ms1
+0A9E  @ITOF
+0AD4  @FLT
+0004  LCD_INIT_STRING
+0702  lcd_send_nibble
+0744  lcd_send_byte
+0784  lcd_init
+07E8  lcd_gotoxy
+0822  @goto11610
+0844  lcd_putc
+0018  KEYS
+07E4  kbd_init
+0B4A  kbd_getc
+0C40  @goto11649
+0FF6  @I2C_READ_1
+0F8A  @I2C_WRITE_1
+14A2  ds1307_get_date
+157A  ds1307_get_time
+105C  ds1307_bcd2bin
+0960  @I2C_READ_2
+08F4  @I2C_WRITE_2
+0E62  write_ext_eeprom
+09C8  read_ext_eeprom
+0C62  teclado
+0DDE  @goto11943
+0E00  un_digito
+0F54  escribir_memoria_ext
+08B8  leer
+0A60  leer_men_ext
+117A  hora_fecha
+0038  @const583
+1082  @DIV88
+10AA  @PRINTF_D_466
+004E  @const591
+0062  @const592
+1434  buscar_pos
+14A2  hacer_reporte
+165E  mostrar_reporte
+0078  @const599
+1798  MAIN
+009A  @const613
+00BC  @const614
+00DE  @const615
+00FC  @const616
+011E  @const617
+0134  @const618
+014C  @const619
+0166  @const620
+0184  @const622
+01A4  @const623
+01BA  @const624
+01DC  @const625
+01FA  @const626
+021C  @const627
+023C  @const628
+025C  @const629
+0272  @const632
+0292  @const633
+02AE  @const634
+02C6  @const635
+02E6  @const636
+0306  @const637
+0326  @const638
+0342  @const639
+0362  @const640
+0380  @const641
+0396  @const642
+03AE  @const643
+03CA  @const644
+03E2  @const645
+0404  @const646
+0426  @const647
+0448  @const648
+046A  @const649
+048C  @const650
+04A6  @const651
+04C6  @const652
+04E8  @const653
+0506  @const654
+0528  @const655
+054A  @const656
+056C  @const658
+058A  @const659
+05A2  @const660
+05B8  @const661
+05DA  @const662
+05FA  @const663
+061A  @const665
+0634  @const667
+064E  @const669
+066C  @const673
+0682  @const678
+06A4  @const692
+06BC  @const711
+1798  @cinit
+0136  StrtoulGO
+0136  StrtolGO
+0C63  inicio
+0C72  menu
+0D3D  admin
+1253  David
+0E30  Miguel
+
+
+User Memory space: 
+
+Project Directory:
+    C:\Proyecto arquitectura c\Direccionamiento de la memoria\
+
+Project Files:
+    Direccionamiento de memoria.c
+    ..\..\Program Files (x86)\PICC\devices\18F4550.h
+    ..\..\Program Files (x86)\PICC\drivers\stdlib.h
+    ..\..\Program Files (x86)\PICC\drivers\stddef.h
+    ..\..\Program Files (x86)\PICC\drivers\string.h
+    ..\..\Program Files (x86)\PICC\drivers\ctype.h
+    ..\..\Program Files (x86)\PICC\drivers\math.h
+    ..\..\Program Files (x86)\PICC\drivers\LCD4x20_3PIN.c
+    ..\..\Program Files (x86)\PICC\drivers\KBD18F.c
+    ..\..\Program Files (x86)\PICC\drivers\DS1307A.c
+    ..\..\Program Files (x86)\PICC\drivers\24C512.c
+
+Units:
+    C:\Proyecto arquitectura c\Direccionamiento de la memoria\Direccionamiento de memoria.c (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    Errors:      Direccionamiento de memoria.err
+    Ext Symbols: Direccionamiento de memoria.esym
+    INHX32:      Direccionamiento de memoria.hex
+    Symbols:     Direccionamiento de memoria.sym
+    List:        Direccionamiento de memoria.lst
+    Debug/COFF:  Direccionamiento de memoria.cof
+    Project:     Direccionamiento de memoria.PJT
+    Call Tree:   Direccionamiento de memoria.tre
+    Statistics:  Direccionamiento de memoria.sta
